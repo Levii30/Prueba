@@ -1,0 +1,16 @@
+<p>Detalle</p>
+
+<div  style="background-color: aqua;">
+    <p>Nombre: {{ pokemonDetalle?.name }} </p>
+    <p>Peso: {{ pokemonDetalle?.weight }} </p>
+</div>
+
+<input type="number" [formControl]="id">
+
+
+<p>Todo</p>
+
+<div *ngFor="let item of listaDePokemons" style="background-color: aqua;">
+    <p>{{ item.name }} </p>
+    <a href="{{ item.url }}">{{ item.url }}</a>
+</div>
